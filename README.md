@@ -20,9 +20,9 @@ The main goal here is to make it super easy to get a great web-based SDR up and 
 Getting HomeLAB-Radio going is designed to be as simple as possible. Just copy and paste this one command into your Linux terminal:
 
 **The Easy Install Command:**
-
+```
 curl \-sL https://raw.githubusercontent.com/Rad-nerd/HomeLAB-Radio/master/install.sh | sudo bash
-
+```
 **What Happens When You Run This Command:**
 
 1. The install.sh script is downloaded from the master branch of the HomeLAB-Radio GitHub page.  
