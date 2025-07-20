@@ -22,6 +22,10 @@ echo ""
 # Ask for sudo password upfront and keep it cached for the duration of the script
 sudo -v || { echo "Sudo access required. Exiting."; exit 1; }
 
+# Set DEBIAN_FRONTEND to noninteractive to prevent apt from asking questions
+# This is crucial for one-liner execution.
+export DEBIAN_FRONTEND=noninteractive
+
 # 1. Update package lists and install basic tools
 echo "1/6: Updating package lists and installing essential tools (git, curl, gpg, etc.)..."
 sudo apt update -y
@@ -111,6 +115,7 @@ CURRENT_REPO_PATH=$(pwd)/$REPO_DIR
 
 # 4. Install OpenWebRX+ from packages
 echo "4/6: Updating package cache and installing OpenWebRX+..."
+# DEBIAN_FRONTEND=noninteractive ensures apt doesn't ask questions
 sudo apt update -y
 sudo apt install -y openwebrx # This should now pull from the added repositories
 
