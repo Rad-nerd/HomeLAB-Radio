@@ -1,6 +1,6 @@
-# **HomeLAB-Radio: Your Personal SDR Setup**
+# **HomeLAB-Radio: Your Personal WEBSDR Setup**
 
-*\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_*
+
 
 ## **Hi There\! What is HomeLAB-Radio All About?**
 
