@@ -4,9 +4,8 @@ set -e
 REPO_URL="https://github.com/Rad-nerd/HomeLAB-Radio.git"
 REPO_DIR="HomeLAB-Radio"
 
-# IMPORTANT: YOU MUST VERIFY THIS PATH ON A CLEAN OPENWEBRX+ INSTALLATION!
-# This is the standard path for OpenWebRX+ htdocs when installed via package on Debian/Ubuntu.
-OPENWEBRX_HTDOCS_PATH="/usr/lib/python3/dist-packages/openwebrx/htdocs" 
+# CORRECTED PATH: This is the actual path for OpenWebRX+ htdocs.
+OPENWEBRX_HTDOCS_PATH="/usr/lib/python3/dist-packages/htdocs" 
 
 # This is the path to your custom htdocs directory *within* your cloned HomeLAB-Radio repository.
 CUSTOM_HTDOCS_LOCAL_NAME="htdocs" 
@@ -121,6 +120,7 @@ sudo apt install -y openwebrx # This should now pull from the added repositories
 
 # 5. Replace OpenWebRX+ htdocs with HomeLAB-Radio htdocs
 echo "5/6: Applying HomeLAB-Radio UI modifications by replacing htdocs..."
+# Corrected path for OPENWEBRX_HTDOCS_PATH
 if [ -d "$OPENWEBRX_HTDOCS_PATH" ]; then
     echo "    Backing up original OpenWebRX+ htdocs to ${OPENWEBRX_HTDOCS_PATH}.bak"
     sudo mv "$OPENWEBRX_HTDOCS_PATH" "${OPENWEBRX_HTDOCS_PATH}.bak" || true # Use || true to prevent error if .bak already exists
