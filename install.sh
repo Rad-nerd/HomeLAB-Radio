@@ -11,7 +11,6 @@ OPENWEBRX_HTDOCS_PATH="/usr/lib/python3/dist-packages/openwebrx/htdocs"
 # This is the path to your custom htdocs directory *within* your cloned HomeLAB-Radio repository.
 CUSTOM_HTDOCS_LOCAL_NAME="htdocs" 
 
-
 echo "========================================="
 echo "  Welcome to the HomeLAB-Radio Installer!"
 echo "========================================="
@@ -20,21 +19,8 @@ echo "This script will install OpenWebRX+ and then apply the HomeLAB-Radio UI mo
 echo "It requires an internet connection and sudo privileges."
 echo ""
 
-# ADD THIS SECTION FOR THE PROMPT
-read -p "Do you want to proceed with the installation? [Y/n]: " CONFIRM_INSTALL
-CONFIRM_INSTALL=${CONFIRM_INSTALL:-y} # Default to 'y' if user just presses Enter
-
-if [[ "$CONFIRM_INSTALL" =~ ^[Yy]$ ]]; then
-    echo "Proceeding with installation..."
-else
-    echo "Installation cancelled by user. Exiting."
-    exit 0
-fi
-
-
 # Ask for sudo password upfront and keep it cached for the duration of the script
 sudo -v || { echo "Sudo access required. Exiting."; exit 1; }
-
 
 # 1. Update package lists and install basic tools
 echo "1/6: Updating package lists and installing essential tools (git, curl, gpg, etc.)..."
