@@ -12,9 +12,8 @@ The main goal here is to make it super easy to get a great web-based SDR up and 
 * **Custom Look:** I've swapped out the usual OpenWebRX+ web pages with a custom design. It's meant to look better and be easier to use, especially for your homelab setup.  
 * **Quick Install:** There's just one simple command to get everything set up. It takes care of all the necessary parts, installs OpenWebRX+, and then adds all my custom changes.  
 * **Smart OS Helper:** The installation script is smart\! It figures out if you're using Ubuntu (versions 22.04, 24.04) or Debian (Bullseye, Bookworm) to make sure everything gets set up correctly.  
-* **(We're working on more cool stuff, like connecting to specific hardware or other services you might have in your homelab\!)**
 
-## **How to Install It (No Docker Yet)**
+## **How to Install It**
 
 Getting HomeLAB-Radio going is designed to be as simple as possible. Just copy and paste this one command into your Linux terminal:
 
