@@ -332,7 +332,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             <input title="Waterfall maximum level" id="openwebrx-waterfall-color-max" class="openwebrx-panel-slider" type="range" min="-200" max="100" value="50" step="1" onchange="Waterfall.updateColors(1);">
                         </div>
                     </div>
-                    <div id="openwebrx-section-settings" class="openwebrx-section-divider" onclick="UI.toggleSection(this);">&blacktriangle;&nbsp;Settings</div>
+			<div class="openwebrx-section-divider" onclick="UI.toggleSection(this);" >&blacktriangledown;&nbsp;HF Propagation</div>
+                     <div class="openwebrx-section closed">
+                        <div class="openwebrx-panel-line">
+                          <img src="https://www.hamqsl.com/solarbc.php">
+                    </div>
+                  	</div>
+			<div id="openwebrx-section-settings" class="openwebrx-section-divider" onclick="UI.toggleSection(this);">&blacktriangle;&nbsp;Settings</div>
                     <div class="openwebrx-section closed">
                         <div class="openwebrx-panel-line">
                             <div title="Reset theme" class="openwebrx-button openwebrx-slider-button" onclick="UI.setTheme('default');">
