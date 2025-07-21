@@ -42,8 +42,9 @@ Once everything is installed, HomeLAB-Radio should be ready for you to configure
 * Just open your web browser and go to this address: http://\<YOUR\_SERVER\_IP\_ADDRESS\>:8073  
   * Remember to change \<YOUR\_SERVER\_IP\_ADDRESS\> to the actual address or name of your server.  
   * The standard port for OpenWebRX+ is 8073\.
-  * **NOTE:** you cannot go to settings from the UI itself anymore \(because what if your arent the server admin and the settings button is usless so i removed it\) you have to      go to http://\<YOUR\_SERVER\_IP\_ADDRESS\>:8073/settings
-  * 
+  * **NOTE:** you cannot go to settings from the UI itself anymore \(because what if your arent the server admin and the settings button is for the server admin. so i removed
+    it\) you have to go to http://\<YOUR\_SERVER\_IP\_ADDRESS\>:8073/settings
+   
 ## **What's Coming Next?**
 
 * **Docker Install:** In the future, we're planning to add an even simpler way to install it using Docker. This will make it even easier to move around and keep separate from other things on your system.
