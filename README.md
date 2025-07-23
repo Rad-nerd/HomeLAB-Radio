@@ -3,13 +3,13 @@
 ![image](photo.png)
 ## **Hi There\! What is HomeLAB-Radio All About?**
 
-HomeLAB-Radio is a modified version of OpenWebRX+, i made to to unleash the full potental of the client side code. I've added some cool changes to how it looks and other things, so you get a really nice experience with your software-defined radio in your own space. **It's actually designed to look a lot like the original WebSDR dist11 client, which I thought was pretty neat\! I just made this whole thing in my homelab while messing around, and that's how it got its name.**
+HomeLAB-Radio is a modified version of OpenWebRX+, I made to to unleash the full potential of the client side code. I've added some cool changes to how it looks and other things, so you get a really nice experience with your software-defined radio in your own space. **It's actually designed to look a lot like the original WebSDR dist11 client, which I thought was pretty neat\! I just made this whole thing in my homelab while messing around, and that's how it got its name.**
 
 The main goal here is to make it super easy way to have a great extremely customizable web-based SDR up and running quickly on any linux device.
 
 ## **What's New and Different?**
 
-* **Custom Look:** I've swapped out the usual OpenWebRX+ web pages with a custom design. no more anoying header up top because i put it into the reciver controls panel. and the reciver controls are built into the web page instead of the little pop up menu, that makes it nice and sleek. the coolest thing i did to it was changed the tuning bar to look exactly like the original WebSDR software. also I changed the layout of the whole reciving area to mimic the original WebSDR software.
+* **Custom Look:** I've swapped out the usual OpenWebRX+ web pages with a custom design. no more annoying header up top because i put it into the reciver controls panel. and the reciver controls are built into the web page instead of the little pop up menu, that makes it nice and sleek. the coolest thing i did to it was changed the tuning bar to look exactly like the original WebSDR software. also I changed the layout of the whole reciving area to mimic the original WebSDR software.
 * **Quick Install:** There's just one simple command to get everything set up. It takes care of all the necessary parts, installs OpenWebRX+, and then adds all my custom changes.  
 * **Smart OS Helper:** The installation script is smart\! It figures out if you're using Ubuntu (versions 22.04, 24.04) or Debian (Bullseye, Bookworm) to make sure everything gets set up correctly.  
 
