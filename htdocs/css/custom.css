@@ -1,0 +1,36 @@
+/* Ensure the main container for panels looks clean and simple, blending with your header CSS */
+#openwebrx-panels-container-right .openwebrx-panel {
+    background-color: rgba(0,0,0,0.7) !important; /* Slightly transparent dark background for panels */
+    border: 1px solid #333 !important; /* Subtle border */
+    box-shadow: none !important; /* Remove any default shadows if present */
+}
+
+/* Optional: Refine button appearance to be more minimalist */
+.openwebrx-button {
+    background-color: #333 !important; /* Darker, flat button background */
+    border: 1px solid #555 !important;
+    border-radius: 3px !important;
+    color: #eee !important;
+    padding: 4px 8px !important;
+    font-size: 0.85em !important;
+}
+.openwebrx-button:hover {
+    background-color: #555 !important;
+    border-color: #777 !important;
+}
+
+#typeffect {
+    /* ... existing styles ... */
+    line-height: 1.2; /* Explicitly set for consistent text line height */
+    /*
+     * We're setting a fixed `height` here instead of `min-height`
+     * because your text will always fit on one line. This provides
+     * the most stable vertical dimension.
+     * 2.5em is a good safe value for a 2em font with a 1.2 line-height.
+     */
+    height: 2.5em;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
