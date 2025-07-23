@@ -10,7 +10,7 @@ OPENWEBRX_HTDOCS_PATH="/usr/lib/python3/dist-packages/htdocs"
 # This is the path to your custom htdocs directory *within* your cloned HomeLAB-Radio repository.
 CUSTOM_HTDOCS_LOCAL_NAME="htdocs" 
 
-echo '
+echo "
   _    _                      _               ____        _____            _____ _____ ____  
  | |  | |                    | |        /\   |  _ \      |  __ \     /\   |  __ \_   _/ __ \ 
  | |__| | ___  _ __ ___   ___| |       /  \  | |_) |_____| |__) |   /  \  | |  | || || |  | |
@@ -19,7 +19,7 @@ echo '
  |_|  |_|\___/|_| |_| |_|\___|______/_/    \_\____/      |_|  \_\/_/    \_\_____/_____\____/ 
                                        
    --- Made by Rad-nerd ---
-'
+"
 echo ""
 echo "========================================="
 echo "  Welcome to the HomeLAB-Radio Installer!"
