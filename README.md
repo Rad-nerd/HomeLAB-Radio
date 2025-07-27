@@ -10,24 +10,23 @@ The main goal here is to make it super easy way to have a great extremely custom
 ## **What's New and Different?**
 
 * **Custom Look:** I've swapped out the usual OpenWebRX+ web pages with a custom design. no more annoying header up top because i put it into the reciver controls panel. and the reciver controls are built into the web page instead of the little pop up menu, that makes it nice and sleek. the coolest thing i did to it was changed the tuning bar to look exactly like the original WebSDR software. also I changed the layout of the whole reciving area to mimic the original WebSDR software.
-* **Quick Install:** There's just one simple command to get everything set up. It takes care of all the necessary parts, installs OpenWebRX+, and then adds all my custom changes.  
+* **Quick Install:** There's just a few simple commands to get everything set up. It takes care of all the necessary parts, installs OpenWebRX+, and then adds all my custom changes.  
 * **Smart OS Helper:** The installation script is smart\! It figures out if you're using Ubuntu (versions 22.04, 24.04) or Debian (Bullseye, Bookworm) to make sure everything gets set up correctly.  
 
 ## **How to Install It**
 
-Getting HomeLAB-Radio going is designed to be as simple as possible. Just copy and paste this one command into your Linux terminal:
+Getting HomeLAB-Radio going is designed to be as simple as possible. Just copy and paste this these commands into your Linux terminal:
 
-**The Easy Install Command:**
+**The Easy Install Commands:**
 ```
 wget https://raw.githubusercontent.com/Rad-nerd/HomeLAB-Radio/master/install.sh
 chmod +x install.sh
 bash install.sh
 ```
-**What Happens When You Run This Command:**
-
-1. The install.sh script is downloaded from the master branch of the HomeLAB-Radio GitHub page.  
-2. Then, that script runs with special administrator permissions (sudo).  
-3. After that, the script will do these things step-by-step:  
+**What Happens When You Run These Commands:**
+1. The install.sh script is downloaded from the master branch of the HomeLAB-Radio GitHub page using wget.
+3. Then, that script runs with special administrator permissions (sudo).  
+4. After that, the script will do these things step-by-step:  
    * It will ask you for your sudo password.  
    * Your system's software lists will be updated, and all the tools it needs will be installed.  
    * It will figure out which Linux system and version you are using (Ubuntu 22.04/24.04, Debian Bullseye/Bookworm).  
