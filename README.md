@@ -19,7 +19,9 @@ Getting HomeLAB-Radio going is designed to be as simple as possible. Just copy a
 
 **The Easy Install Command:**
 ```
-curl \-sL https://raw.githubusercontent.com/Rad-nerd/HomeLAB-Radio/master/install.sh | sudo bash
+wget https://raw.githubusercontent.com/Rad-nerd/HomeLAB-Radio/master/install.sh
+chmod +x install.sh
+bash install.sh
 ```
 **What Happens When You Run This Command:**
 
