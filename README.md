@@ -35,6 +35,8 @@ bash install.sh
    * The HomeLAB-Radio project files will be copied or updated from GitHub to make sure you have the latest changes.  
    * **Importantly, it will make a backup of your original OpenWebRX+ web files, and then put your custom HomeLAB-Radio look in their place.**  
    * Finally, the OpenWebRX+ service will be started or restarted.
+## **How to Update**
+if you want to update openwebrx-plus and the htdocs \(because i update the code somtimes), just run the script again. 
 
 ## **How to Use It**
 
