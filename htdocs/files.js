@@ -1,3 +1,4 @@
+document.title = "HomeLAB-RADIO";
 $.fn.fileTile = function() {
     this.each(function() {
         $(this).on('click', '.file-delete', function(e) {

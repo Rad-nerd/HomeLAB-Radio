@@ -32,7 +32,7 @@ UI.loadSettings = function() {
     this.toggleFrame(LS.has('ui_frame')? LS.loadBool('ui_frame') : false);
     this.toggleWheelSwap(LS.has('ui_wheel')? LS.loadBool('ui_wheel') : false);
     this.toggleSpectrum(LS.has('ui_spectrum')? LS.loadBool('ui_spectrum') : false);
-    this.toggleBandplan(LS.has('ui_bandplan')? LS.loadBool('ui_bandplan') : false);
+    this.toggleBandplan(LS.has('ui_bandplan')? LS.loadBool('ui_bandplan') : true);
     this.setWfTheme(LS.has('wf_theme')? LS.loadStr('wf_theme') : 'default');
     this.setNR(LS.has('nr_threshold')? LS.loadInt('nr_threshold') : false);
     this.toggleNR(LS.has('nr_enabled')? LS.loadBool('nr_enabled') : false);

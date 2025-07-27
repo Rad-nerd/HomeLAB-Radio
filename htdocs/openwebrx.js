@@ -439,16 +439,22 @@ function mkscale() {
     range = get_visible_freq_range();
     if (!range) return;
     mkenvelopes(range); //when scale changes we will always have to redraw filter envelopes, too
-    scale_ctx.clearRect(0, 22, scale_ctx.canvas.width, scale_ctx.canvas.height - 22);
-    scale_ctx.strokeStyle = "#fff";
-    scale_ctx.font = "bold 11px sans-serif";
-    scale_ctx.textBaseline = "top";
-    scale_ctx.fillStyle = "#fff";
-    var spacing = get_scale_mark_spacing(range);
-    //console.log(spacing);
-    var marker_hz = Math.ceil(range.start / spacing.smallbw) * spacing.smallbw;
-    var text_h_pos = 22 + 10 + ((is_firefox) ? 3 : 0);
-    var text_to_draw = '';
+    // In your mkscale function, change this line:
+scale_ctx.clearRect(0, 0, scale_ctx.canvas.width, scale_ctx.canvas.height);
+    scale_ctx.strokeStyle  = "#fff";
+	scale_ctx.font         = "normal 11px 'DejaVu Sans'";   // HLR
+	scale_ctx.textBaseline = "top";
+	scale_ctx.fillStyle    = "#fff";
+
+	var spacing = get_scale_mark_spacing(range);
+
+	//console.log(spacing);
+
+	var marker_hz = Math.ceil(range.start / spacing.smallbw) * spacing.smallbw;
+
+	var text_h_pos = 22 + 10 + 2 + ((is_firefox) ? 3 : 0);  // HLR
+
+	var text_to_draw = '';
     var ftext = function (f) {
         text_to_draw = format_frequency(spacing.params.format, f, spacing.params.pre_divide, spacing.params.decimals);
     };
@@ -460,8 +466,10 @@ function mkscale() {
         if (marker_hz % spacing.params.large_marker_per_hz === 0) {  //large marker
             if (typeof first_large === "undefined") var first_large = marker_hz;
             last_large = marker_hz;
-            scale_ctx.lineWidth = 3.5;
-            scale_ctx.lineTo(x, 22 + 11);
+          
+            scale_ctx.lineWidth = 1.5;       // HLR
+			scale_ctx.lineTo(x, 28);     // HLR
+          
             ftext(marker_hz);
             var text_measured = scale_ctx.measureText(text_to_draw);
             scale_ctx.textAlign = "center";
@@ -481,8 +489,8 @@ function mkscale() {
             else scale_ctx.fillText(text_to_draw, x, text_h_pos); //draw text normally
         }
         else {  //small marker
-            scale_ctx.lineWidth = 2;
-            scale_ctx.lineTo(x, 22 + 8);
+            scale_ctx.lineWidth = 1.5;      // HLR
+			scale_ctx.lineTo(x, 22 + 2);    // HLR
         }
         marker_hz += spacing.smallbw;
         scale_ctx.stroke();
@@ -1297,7 +1305,7 @@ var canvas_context;
 var canvases = [];
 var canvas_default_height = 200;
 var canvas_container;
-var canvas_actual_line = -1;
+var canvas_actual_line = -0.5;
 
 function add_canvas() {
     var new_canvas = document.createElement("canvas");

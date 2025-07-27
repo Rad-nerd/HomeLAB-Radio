@@ -1,3 +1,4 @@
+document.title = "HomeLAB-RADIO";
 $(function(){
     $('.map-input').mapInput();
     $('.imageupload').imageUpload();

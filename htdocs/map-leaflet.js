@@ -1,3 +1,4 @@
+document.title = "HomeLAB-RADIO";
 var mapSources = [
     {
         name: 'OpenStreetMap',

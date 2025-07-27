@@ -99,6 +99,8 @@ AudioEngine.prototype._start = function() {
 
     me.gainNode = me.audioContext.createGain();
     me.gainNode.connect(me.audioContext.destination);
+   window.openwebrx_visualizer_gainNode = me.gainNode;
+window.openwebrx_visualizer_audioContext = me.audioContext;
 
     if (useAudioWorklets && me.audioContext.audioWorklet) {
         me.audioContext.audioWorklet.addModule('static/lib/AudioProcessor.js').then(function(){

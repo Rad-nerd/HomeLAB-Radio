@@ -1,3 +1,4 @@
+document.title = "HomeLAB-RADIO";
 // Reasonable defaults, will be overriden by server
 var retention_time = 2 * 60 * 60 * 1000;
 var call_retention_time = 15 * 60;

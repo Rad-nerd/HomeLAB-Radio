@@ -180,7 +180,7 @@ input[type=range]:disabled {
 	background-repeat: repeat-x;
 	background-size: auto 125px;
     background-color: #000;
-    z-index: 1001;
+    z-index: 100;
 }
 
 #openwebrx-bookmarks-container
@@ -479,7 +479,7 @@ input[type=range]:disabled {
 }
 
 #openwebrx-panels-container-right {
-    right: -10px;
+    right: 0;
     /* REMOVED: top: 730px; -- No longer needed as top: 0 and bottom: 0 define height */
     align-items: flex-end;
     z-index: 1000;
@@ -500,7 +500,7 @@ input[type=range]:disabled {
     width: calc(25%) !important; 
     /* Making the panel take 100% of its parent's height (minus margins). */
     /* This works well for the right panel which has a defined container height. */
-    height: calc(100%);
+    height: 100vh;
     /*border-radius: 15px;
     -moz-border-radius: 15px;*/
     margin: 5.9px;
@@ -549,6 +549,7 @@ input[type=range]:disabled {
     transition: all 0s !important; /* Stop all transitions */
     animation: none !important;    /* Stop all CSS animations */
     overflow: auto;
+    height: 100vh !important;
 }
 
 .openwebrx-button:hover, .openwebrx-demodulator-button.highlighted, .openwebrx-button.highlighted
@@ -1362,6 +1363,7 @@ img.openwebrx-mirror-img
 
 #openwebrx-panel-adsb-message {
     height: 310px;
+    width: 100%;
 }
 
 #openwebrx-panel-adsb-message a {

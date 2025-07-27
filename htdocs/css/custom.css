@@ -1,0 +1,122 @@
+/**
+ * @file custom.css
+ * @description Custom CSS overrides for OpenWebRX Plus.
+ * This file customizes the visual appearance and interactivity
+ * of various UI elements, particularly for panel transparency,
+ * positioning, and click-through behavior.
+ *
+ * @project Homelab-Radio OpenWebRX Customization
+ * @author Lucas
+ * @copyright 2025 Lucas
+ * @license MIT
+ */
+
+/*
+ * ==============================================================================
+ * GLOBAL & CONTAINER POINTER EVENTS
+ * These rules manage overall mouse event handling to ensure waterfall interactivity.
+ * ==============================================================================
+ */
+
+/* Make the main global container for all panels transparent to mouse events.
+   This allows clicks to pass through to elements like the waterfall beneath. */
+#openwebrx-panels-container {
+    pointer-events: none !important;
+}
+
+/*
+ * ==============================================================================
+ * RIGHT PANELS CONTAINER & INDIVIDUAL RECEIVER PANEL
+ * Manages the layout, background, and interactivity of the right-side panels.
+ * ==============================================================================
+ */
+
+/* Styles for the right panels container.
+   Sets it as a flex column, controls its width, and provides a solid black background
+   to ensure full visual opacity behind its content. */
+#openwebrx-panels-container-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 300px !important;
+    background-color: #000000 !important; /* Solid black background for full opacity */
+}
+
+/* Styles for individual panels within the right container.
+   Provides a slightly transparent dark background for visual blending and subtle borders. */
+#openwebrx-panels-container-right .openwebrx-panel {
+    background-color: rgba(0,0,0,0.7) !important; /* Slightly transparent dark background for panels */
+    border: 1px solid #333 !important; /* Subtle border */
+    box-shadow: none !important; /* Remove any default shadows if present */
+}
+
+/* Styles for the main receiver panel.
+   Ensures it grows to fill available space, manages its overflow,
+   and explicitly makes it interactive. */
+#openwebrx-panel-receiver {
+    flex-grow: 1;
+    height: auto !important; /* Lets flex-grow manage height, overrides any default 100% height */
+    overflow-y: auto;       /* Adds vertical scrollbars if content overflows */
+    margin: 0;
+    padding: 0;
+    width: 100% !important; /* Ensures the panel fills its parent's width */
+    pointer-events: auto !important; /* Explicitly makes the receiver panel interactive */
+}
+
+/*
+ * ==============================================================================
+ * LEFT PANELS CONTAINER & CONTENT INTERACTIVITY
+ * Manages the layout and specific interactivity for the left-side panels (e.g., digimodes).
+ * ==============================================================================
+ */
+
+/* Styles for the left panels container (e.g., digimodes).
+   It allows clicks to pass through the container itself to the waterfall below,
+   and sets its width. Background color is removed as per user request. */
+#openwebrx-panels-container-left {
+    pointer-events: none !important; /* Make the left container itself non-interactive to clicks */
+    width: 100% !important;          /* Sets the width of the left panel container */
+    /* background-color has been removed from here as per previous request. */
+}
+
+/* Re-enables interactivity for specific content (individual panels, buttons)
+   that are *inside* the left panels container. */
+#openwebrx-panels-container-left .openwebrx-panel,
+#openwebrx-panels-container-left .openwebrx-button {
+    pointer-events: auto !important; /* Explicitly make content inside left container interactive */
+}
+
+/*
+ * ==============================================================================
+ * GENERAL UI ELEMENTS
+ * General styling for common interactive elements like buttons and specific text displays.
+ * ==============================================================================
+ */
+
+/* Optional: Refine general button appearance to be more minimalist */
+.openwebrx-button {
+    background-color: #333 !important; /* Darker, flat button background */
+    border: 1px solid #555 !important;
+    border-radius: 3px !important;
+    color: #eee !important;
+    padding: 4px 8px !important;
+    font-size: 0.85em !important;
+}
+
+/* Hover state for buttons */
+.openwebrx-button:hover {
+    background-color: #555 !important;
+    border-color: #777 !important;
+}
+
+/* Styles for the specific #typeffect element (e.g., frequency display text) */
+#typeffect {
+    line-height: 1.2;      /* Explicitly set for consistent text line height */
+    height: 2.5em;         /* Fixed height for stable vertical dimension based on font size */
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    /* color: white; <-- This was in the HTML; if you want it here, add it */
+}

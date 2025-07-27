@@ -1,3 +1,4 @@
+document.title = "HomeLAB-RADIO";
 $(function(){
     var converter = new showdown.Converter({openLinksInNewWindow: true});
 
