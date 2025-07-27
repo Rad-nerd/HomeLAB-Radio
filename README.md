@@ -1,6 +1,6 @@
 # **HomeLAB-Radio: Your Personal WebSDR Setup**
 
-![image](Screenshot 2025-07-27 2.08.12 PM.png)
+![image]('Screenshot 2025-07-27 2.08.12 PM.png')
 ## **Hi There\! What is HomeLAB-Radio All About?**
 
 HomeLAB-Radio is a modified version of OpenWebRX+, I made to to unleash the full potential of the client side code. I've added some cool changes to how it looks and other things, so you get a really nice experience with your software-defined radio in your own space. **It's actually designed to look a lot like the original WebSDR dist11 client, which I thought was pretty neat\! I just made this whole thing in my homelab while messing around, and that's how it got its name.**
